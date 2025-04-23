@@ -1,0 +1,8 @@
+python
+machine learning
+sql
+tensorflow
+data analysis
+pandas
+numpy
+deep learning

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Your Resume Score: {{ score }}/100</h1>
+    <h2>Target Industry: {{ job_target }}</h2>
+    
+    <div class="feedback">
+        <h3>Missing Keywords:</h3>
+        <ul>
+            {% for kw in missing_kws %}
+                <li>{{ kw }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

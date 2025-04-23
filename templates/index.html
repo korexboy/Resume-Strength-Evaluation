@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Evaluator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Resume Strength Evaluator</h1>
+    <form action="/analyze" method="POST">
+        <label>Target Industry:</label>
+        <select name="job_target" required>
+            <option value="data_science">Data Science</option>
+            <option value="marketing">Marketing</option>
+        </select>
+        
+        <label>Paste Your Resume:</label>
+        <textarea name="resume_text" rows="15" required></textarea>
+        
+        <button type="submit">Evaluate</button>
+    </form>
+</body>
+</html>
